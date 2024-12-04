@@ -1,0 +1,28 @@
+Possible X-MAS patterns:
+
+M.M
+.A.
+S.S
+
+M.S
+.A.
+M.S
+
+S.S
+.A.
+M.M
+
+S.M
+.A.
+S.M
+
+A is always in the middle. Starting at top left, then top right,
+then bottom left and then bottom right we have the following patterns
+that give us a two MAS in the shape of an X:
+
+MMSS, MSMS, SSMM, SSMM
+
+So we can process our array by checking each entry: if it is an A,
+then we proceed to check the corners in the order described above.
+If the pattern we find is one of four patterns above, we increase
+the counter.
